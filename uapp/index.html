@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Data Barang</h1>
+
+    <table border="1">
+        <tr>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <th>001</th>
+            <th>Barang A</th>
+            <th>10.000</th>
+        </tr>
+        <tr>
+            <th>002</th>
+            <th>Barang B</th>
+            <th>20.000</th>
+        </tr>
+        <tr>
+            <th>003</th>
+            <th>Barang C</th>
+            <th>30.000</th>
+        </tr>
+
+    </table>
+
+    <h1>Inputan User</h1>
+    <form action="">
+        Masukkkan kode : <input type="text" name="kd_barang"><br><br>
+        Banyaknya barang : <input type="text" name="juml_barang"><br><br>
+        <button type="submit">submit</button>
+    </form>
+
+
+
+</body>
+<script>
+
+    var kd = document.forms.kd.value;
+    var jml = document.forms.jml.value;
+    if (kd == "001") {
+        hrg = 10000;
+    } else if (kd == "002") {
+        hrg = 20000;
+    } else {
+        hrg = 30000;
+    }
+    function hitung() {
+        total = parseInt(hrg) * parseInt(jml.value);
+        document.write("Total Harga : Rp." + total);
+
+        alert("Total Harga : Rp." + total);
+    }
+
+
+</script>
+
+</html>
